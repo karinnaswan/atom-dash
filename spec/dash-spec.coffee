@@ -3,6 +3,7 @@ dash = require('../lib/dash')
 describe "dash", ->
   it "should open dash", ->
     waitsForPromise ->
+    
       atom.workspace.open('test.hs').then (editor) ->
         view = atom.views.getView(editor)
 
